@@ -6,7 +6,7 @@ package ru.geekbrains.javaCore.lesson05;
 // У каждого животного есть ограничения на действия (бег: кот 200 м., собака 500 м.; плавание: кот не умеет плавать, собака 10 м.).
 // Добавить подсчет созданных котов, собак и животных.
 
-public class Animal {
+public abstract class Animal {
     static private int count = 0;
 
     public Animal() {
@@ -18,11 +18,9 @@ public class Animal {
         return count;
     }
 
-    public void run(int howLong) {
-        System.out.println("Животное пробежало "+howLong+"м");
-    }
+    public abstract void run(int howLong);
 
-    public void swim(int howLong) {
-        System.out.println("Животное проплыло "+howLong+"м");
-    }
+    public abstract void swim(int howLong);
+
 }
+
