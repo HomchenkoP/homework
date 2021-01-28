@@ -1,4 +1,3 @@
-
 package ru.geekbrains.javaCore.lesson05;
 
 // Создать классы Собака и Кот с наследованием от класса Животное.
