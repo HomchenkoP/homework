@@ -23,4 +23,3 @@ public abstract class Animal {
     public abstract void swim(int howLong);
 
 }
-
