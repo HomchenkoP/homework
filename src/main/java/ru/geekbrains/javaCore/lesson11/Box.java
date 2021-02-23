@@ -44,9 +44,11 @@ public class Box<T extends Fruit> {
             return 0.0;
         else {
             double totalWeight = 0.0;
-            for (T t : content)
-                totalWeight += (double)t.getWeight();
-            //totalWeight = (content.size() * (double)content.get(0).getWeight());
+            // если фрукты могут быть различного веса
+//            for (T t : content)
+//                totalWeight += (double)t.getWeight();
+            // если у все фрукты имеют одинаковый вес
+            totalWeight = (content.size() * (double)content.get(0).getWeight());
             return totalWeight;
         }
     }
