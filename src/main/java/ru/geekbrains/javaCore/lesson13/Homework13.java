@@ -21,6 +21,9 @@ public class Homework13 {
         final CountDownLatch cdlStart = new CountDownLatch(CARS_COUNT);
         final CountDownLatch cdlFinish = new CountDownLatch(CARS_COUNT);
         final CyclicBarrier cb = new CyclicBarrier(CARS_COUNT);
+//      Семафор лучше все-таки объявить в тоннеле, а не в main.
+//      Потому как если у вас было бы несколько тоннелей, они бы синхронно блочились, и если в одном тоннеле занято, то другие бы блокировались.
+//      Семафор бы хорошо отработал будь он в каждом тоннеле свой.
         final Semaphore smp = new Semaphore(TUNNEL_COUNT);
 
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Подготовка!!!");
