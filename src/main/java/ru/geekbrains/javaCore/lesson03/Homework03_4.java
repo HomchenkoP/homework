@@ -4,6 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 import java.awt.Point;
 
+// 4. *** Доработать искусственный интеллект, чтобы он мог блокировать ходы игрока, и пытаться выиграть сам.
+
 public class Homework03_4 {
 
     public static final int SIZE = 3;

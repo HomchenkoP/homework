@@ -3,6 +3,10 @@ package ru.geekbrains.javaCore.lesson03;
 import java.util.Random;
 import java.util.Scanner;
 
+// 1. Полностью разобраться с кодом;
+// 2. Переделать проверку победы, чтобы она не была реализована просто набором условий.
+// 3. Попробовать переписать логику проверки победы, чтобы она работала для поля 5х5 и количества фишек 4 в линию.
+
 public class Homework03 {
 
     public static final int SIZE = 5;
